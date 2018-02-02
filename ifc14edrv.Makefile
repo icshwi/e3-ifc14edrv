@@ -5,12 +5,8 @@ include $(REQUIRE_TOOLS)/driver.makefile
 
 APP:=ifc14edrv
 APPSRC:=src
-APPINC:=include	
 
 USR_CXXFLAGS = -std=c++0x
 
-# WHY $(APPINC) DONT WORK???
-# USR_INCLUDES += -Iinclude
-
-SOURCES = $(wildcard src/*.cpp)
-
+SOURCES = $(wildcard $(APPSRC)/*.cpp)
+HEADERS = $(wildcard $(APPSRC)/*.h)
