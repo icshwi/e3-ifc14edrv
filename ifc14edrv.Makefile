@@ -25,7 +25,7 @@
 
 where_am_I := $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
 
-include $(REQUIRE_TOOLS)/driver.makefile
+include $(E3_REQUIRE_TOOLS)/driver.makefile
 
 APP:=ifc14edrv
 APP2:=ifc14edrvApp
@@ -50,3 +50,7 @@ SOURCES += $(APPSRC)/IFC14AIChannel.cpp
 SOURCES += $(APPSRC)/IFC14AIChannelGroup.cpp
 SOURCES += $(APPSRC)/IFC14Device.cpp
 
+
+# db rule is the default in RULES_E3, so add the empty one
+
+db:

@@ -1,7 +1,3 @@
-[submodule "e3-env"]
-	path = e3-env
-	url = https://github.com/icshwi/e3-env
-	ignore = dirty
 [submodule "ifc14edrv"]
 	path = ifc14edrv
 	url = https://bitbucket.org/europeanspallationsource/tosca_ifc14edrv
