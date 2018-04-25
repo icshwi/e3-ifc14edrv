@@ -1,4 +1,4 @@
 [submodule "ifc14edrv"]
 	path = ifc14edrv
-	url = https://bitbucket.org/europeanspallationsource/tosca_ifc14edrv
+	url = git@bitbucket.org:europeanspallationsource/tosca_ifc14edrv.git
 	ignore = all
