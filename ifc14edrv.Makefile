@@ -15,17 +15,29 @@
 #  this program. If not, see https://www.gnu.org/licenses/gpl-2.0.txt
 #
 # 
-# Author  : Joao Paulo Martins
-# email   : joaopaulomartins@esss.se
-# Date    : 2018-04-17
-# version : 0.0.1 
+# Author  : Joao Paulo Martins, Jeong Han Lee
+# email   : joaopaulomartins@esss.se, han.lee@esss.se
+# Date    : Friday, September 14 16:05:04 CEST 2018
+# version : 0.0.2
 #
 # ifc14edrv repository follows EPICS standard structure
 # 
 
 where_am_I := $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
-
 include $(E3_REQUIRE_TOOLS)/driver.makefile
+include $(where_am_I)/../configure/DECOUPLE_FLAGS
+
+
+ifneq ($(strip $(NDS3_DEP_VERSION)),)
+nds3_VERSION=$(NDS3_DEP_VERSION)
+endif
+
+
+ifneq ($(strip $(IFCDAQDRV2_DEP_VERSION)),)
+ifcdaqdrv2_VERSION=$(IFCDAQDRV2_DEP_VERSION)
+endif
+
+
 
 APP:=ifc14edrv
 APP2:=ifc14edrvApp
