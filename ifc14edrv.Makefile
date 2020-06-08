@@ -33,8 +33,8 @@ nds3_VERSION=$(NDS3_DEP_VERSION)
 endif
 
 
-ifneq ($(strip $(IFCDAQDRV2_DEP_VERSION)),)
-ifcdaqdrv2_VERSION=$(IFCDAQDRV2_DEP_VERSION)
+ifneq ($(strip $(IFCDAQDRV_DEP_VERSION)),)
+ifcdaqdrv_VERSION=$(IFCDAQDRV_DEP_VERSION)
 endif
 
 
